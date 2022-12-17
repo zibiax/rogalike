@@ -2,8 +2,8 @@ use tcod::colors::*;
 use tcod::console::*;
 
 
-const SCREEN_WIDTH: i32 = 80;
-const SCREEN_HEIGHT: i32 = 50;
+const SCREEN_WIDTH: i32 = 100;
+const SCREEN_HEIGHT: i32 = 70;
 //60 fps max
 const LIMIT_FPS: i32 = 60;
 
@@ -47,7 +47,8 @@ fn handle_keys(tcod: &mut Tcod, player_x: &mut i32, player_y: &mut i32) -> bool{
     
     let key = tcod.root.wait_for_keypress(true);
     match key {
-        Key{ code: Enter,
+        Key { 
+            code: Enter,
             alt: true,
             ..
         } => {    
