@@ -1,3 +1,3 @@
 # rogalike
 
-roguelike rust-game. Experiment
+roguelike rust-game
